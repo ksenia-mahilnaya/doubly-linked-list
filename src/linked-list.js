@@ -176,6 +176,29 @@ class LinkedList {
         this._tail.data = null;
         this.length = 0;
     }
+    
+    reverse() {}
+
+    indexOf(data) {
+        var node = new Node(),
+            currentNode = this._head,
+            counter = 0;
+           
+        node.data = data;
+        
+        while (currentNode.data !== node.data) {
+            currentNode = currentNode.next;
+            if (currentNode === null) {
+              counter = -1;
+              break;  
+            }
+            counter++;
+        }
+        
+        return counter;
+             
+        
+    }
 
 }
 
