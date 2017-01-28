@@ -23,7 +23,6 @@ class LinkedList {
         
         this.length++;
         
-        //return node;
         return this;
     }
     
@@ -58,8 +57,7 @@ class LinkedList {
             length = this.length,
             counter = 0,
             message = {
-                failure : 'Non-existent node in this list',
-                success : 'Current node was deleted successfully'
+                failure : 'Non-existent node in this list'
                 },
             beforeNodeToDelete = null,
             nodeToDelete = null,
@@ -101,7 +99,6 @@ class LinkedList {
         
       this.length--;
     
-      //return message.success;
       return this;
         
         
@@ -115,8 +112,7 @@ class LinkedList {
             beforeNodeToInsert = null,
             afterNodeToInsert = null,
             message = {
-                failure : 'Wrong index!',
-                success : 'Current node was inserted successfully'
+                failure : 'Wrong index!'
                 }
            
            node.data = data;
@@ -162,7 +158,6 @@ class LinkedList {
            
         this.length++;
            
-        //return message.success;
         return this;
     }
     
