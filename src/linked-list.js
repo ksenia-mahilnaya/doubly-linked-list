@@ -208,17 +208,14 @@ class LinkedList {
 
         while (currentNode.data !== node.data) {
             currentNode = currentNode.next;
-            if (currentNode === null) {
-              counter = -1;
-              break;
+            if (!currentNode) {
+              return -1;
             }
             counter++;
         }
 
         return counter;
-
     }
-
 }
 
 module.exports = LinkedList;
